@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETS | Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body >
+
+     <!--DÉBUT HEADER -->
+     <header>
+        <div id="hautHeader">
+            <h1>Loan</h1>
+            <img id="theme-switch" src="Images/rondNoir.png" alt="Moon" onclick="switchThemePortfolio()">
+        </div>
+
+        <div id="basHeader">
+
+            <a class="a" href="index.html">
+                <div class="boutons">
+                    <h3 class="spaceButons">Home</h3>
+                </div>
+            </a>
+
+            <a class="a" href="portfolio.html">
+                <div class="boutons">
+                    <h3 class="spaceButons">Portfolio</h3>
+                </div>
+            </a>
+
+            <a class="a" href="a-propos.html">
+                <div class="boutons">
+                    <h3 class="spaceButons">À propos</h3>
+                </div>
+            </a>
+
+        </div>
+    </header>
+    <!--FIN HEADER-->
+
+    <!--DÉBUT SECTION-->
+    <section id="sectionPortfolio">
+
+        <h1 style="text-align: center" class="grandTexte">Mes réalisations:</h1>
+
+        <div id="compartiment_boutons">
+            <div class="boutons_portofolio" id="bouton_portfolio1" onclick="showProjects()">
+                <h3>Projets</h3>
+            </div>
+            <div class="boutons_portofolio" id="bouton_portfolio2" onclick="showGames()">
+                <h3>Jeux</h3>
+            </div>
+        </div>
+
+
+        <div id="compartiment_portfolio">
+            <h1 id="titre_changeant">TITRE</h1>
+
+            <div id="compartiment_realisations">
+
+                <div id="case1" class="case">
+                    
+                    <h3 class="titreProjet" id="titre1"></h3>
+                    <a class="lien" id="lien1" href="" target="_blank"><h4 class="voirProjet">Voir le projet ></h4></a>
+                </div>
+
+                <div id="case2" class="case">
+                    <h3 class="titreProjet" id="titre2"></h3>
+                    <a class="lien" id="lien2" href="" target="_blank"><h4 class="voirProjet">Voir le projet ></h4></a>
+                </div>
+
+                <div id="case3" class="case">
+                    <h3 class="titreProjet" id="titre3"></h3>
+                    <a class="lien" id="lien3" href="" target="_blank"><h4 class="voirProjet">Voir le projet ></h4></a>
+                </div>
+
+                <div id="case4" class="case">
+                    <h3 class="titreProjet" id="titre4"></h3>
+                    <a class="lien" id="lien4" href="" target="_blank"><h4 class="voirProjet">Voir le projet ></h4></a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--FIN SECTION-->
+
+     <!--DÉBUT FOOTER-->
+     <footer>
+        <div>
+            <p class="txtFooter">+33 6 22 27 06 13</p>
+        </div>
+
+        <div id="footerLogos">
+            <div><a href="https://www.instagram.com/loanprch/?hl=fr" rel="noopener noreferrer" target="_blank"><img class="logosFooter" id="LogoIPortfolio" alt="LogoInstagram" src="images/Logos/LogoInstagramBlanc.png"></a></div>
+            <div><a href="https://www.linkedin.com/in/loan-perchirin-5b8240223/" rel="noopener noreferrer" target="_blank"><img class="logosFooter" id="LogoLPortfolio" alt="LogoLinkedin" src="images/Logos/LogoLinkedinBlanc.png"></a></div>
+            <div><a href=""><img class="logosFooter" id="LogoGPortfolio" alt="LogoGithub" src="images/Logos/LogoGithub.png"></a></div>
+        </div>
+
+        <div>
+            <p class="txtFooter">perchirin.loan@gmail.com</p>
+        </div>
+    </footer>
+    <!--FIN FOOTER-->
+    
+</body>
+</html>

@@ -1,0 +1,541 @@
+html{
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin:auto;
+    font-family: Fjalla -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin-bottom: 60px;
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+    html {
+    filter: invert(100%);
+    }
+    }
+ */
+
+
+
+/*DÉBUT HEADER*/
+
+header{
+    color: whitesmoke;
+    background-color: #dc143c;
+    padding-bottom: 15px;
+}
+
+#theme-switch{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+}
+
+#hautHeader{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#basHeader{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.a{
+    text-decoration: none;
+    color: black;
+}
+
+.boutons{
+    background-color: rgb(240, 130, 130);
+    padding: 4px;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boutons:hover{
+    background-color: red;
+}
+
+.a:hover{
+    color: white;
+}
+
+.spaceButons{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.spaceButons:hover{
+    color: white;
+}
+
+@media(max-width: 315px){
+    .boutons{
+        font-size: smaller;
+    }
+
+}
+
+/*FIN HEADER*/
+
+
+
+
+
+/*DÉBUT HOME*/
+
+#sectionAccueil{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+}
+
+#kanjiPhoto{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+}
+
+#kanjis{
+    background-color: crimson;
+    border: solid rgb(180, 19, 51) 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgKanjis{
+    height: 80px;
+    width: 80px;
+}
+
+#photoMoi{
+    height: 300px;
+    width: 262px;
+    border: rgb(180, 19, 51) 5px solid;
+    background-color: crimson;
+}
+
+#texte{
+    width: 200px;
+}
+
+#portfolio{
+    width: 154px;
+}
+
+#monPortfolio{
+    color: whitesmoke;
+    padding:5px;
+    background-color: goldenrod;
+}
+
+#monPortfolio:hover{
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.logos{
+    height: 45px;
+    width: 45px; 
+}
+
+@media(max-width: 650px)
+{
+    #sectionAccueil{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #texte{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }
+}
+
+@media(max-width: 500px)
+{
+
+    #sectionAccueil{
+        
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #kanjiPhoto{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #kanjis{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 262px;
+    }
+
+    #photo{
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .imgKanjis{
+        height: 50px;
+        width: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+/*FIN HOME*/
+
+
+
+
+
+/*DÉBUT PORTFOLIO*/
+
+#compartiment_boutons{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.boutons_portofolio{
+    background-color: rgb(240, 130, 130);
+    border: rgb(180, 19, 51) 5px solid;
+    padding: 10px;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80px;
+    text-align: center;
+}
+
+.boutons_portofolio:hover{
+    background-color: red;
+    color: white;
+}
+
+#titre_changeant{
+    text-align: center;
+    display: none;
+}
+
+#compartiment_realisations{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.case{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    border: rgb(218, 32, 32) 10px solid;
+    display: none;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.titreProjet{
+    width: 200px;
+    padding: 5px;
+    background-color: rgba(218, 32, 32, 0.733);
+    border: white 3px solid;
+    color: white;
+    text-align: center;
+}
+
+.lien{
+    text-decoration: none;
+}
+
+.voirProjet{
+    width: 120px;
+    padding: 5px;
+    background-color: rgba(218, 32, 32, 0.733);
+    border: white 3px solid;
+    color: white;
+    text-align: center;
+}
+
+.voirProjet:hover{
+    background-color: rgb(218, 32, 32);
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+
+@media(max-width: 420px){
+
+    .case{
+        height: 300px;
+        width: 300px;
+        background-size: cover;
+    }
+
+}
+
+/*FIN PORTFOLIO*/
+
+
+
+
+
+/*PARTIE À PROPOS DE MOI*/
+
+#sectionAPropos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grandTexte{
+    font-size: 70px;
+    text-align: center;
+}
+
+.petitTexte{
+    font-size: 20px;
+}
+
+#textimg{
+    height: 300px;
+    width: 300px;
+}
+
+#infos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#photoCV{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#CV{
+    background-color: rgb(240, 130, 130);
+    width: auto;
+    border: rgb(180, 19, 51) 5px solid;
+    border-top: none;
+}
+
+#CV:hover{
+    background-color: rgb(241, 85, 85);
+    color: white;
+}
+
+#presentation{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#presentationTop{
+    padding: 9px;
+}
+
+#presentationBottom{
+    background-color: rgb(240, 130, 130);
+    border: crimson 4px solid;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+#emglobeur{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color: red;
+    border-radius: 100px;
+    
+}
+
+.competences{
+    border-radius: 50px 50px 0 0;
+    background-color: rgb(240, 130, 130);
+}
+
+.indicateur{
+    border: crimson 4px solid;
+    
+    height: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 19, 51);
+    color: white;
+}
+
+.contenus{
+    padding: 20px;
+    border: crimson 4px solid;
+    border-top: none;
+}
+
+.icons{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, 70px);
+    margin: 20px 0;
+}
+
+.icon{
+    height: 70px;
+}
+
+
+
+
+
+
+
+#meContacter{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#goldenrod{
+    padding: 10px;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+/* @media(max-width: 1375px){
+
+    #emglobeur{
+       padding:10px;
+    }
+} */
+
+@media(max-width: 770px){
+    #infos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grandTexte{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 520px){
+
+    #logosAccueil{
+        display: none;
+    }
+
+
+    .texteIndicateur{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mainSecond{
+        font-size: 20px;
+    }
+
+
+
+    .indicateur{
+        width: 200px;
+        height: 55px;
+    }
+
+}
+
+
+
+
+
+/*DÉBUT FOOTER*/
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+}
+
+#footerLogos{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logosFooter{
+    height: 45px;
+    width: 45px;
+}
+
+@media(max-width: 520px){
+
+    .txtFooter{
+        display: none;
+    }
+}
+
+/*FIN FOOTER*/
+
+
+* {
+    transition: 200ms ease-in background-color;
+    
+  }
