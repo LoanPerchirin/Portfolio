@@ -62,7 +62,7 @@ function showGames(){
     document.querySelector('#case4').style.display = 'inherit';
     document.querySelector('#titre4').replaceChildren("Jeu du Memory");
     document.querySelector('#case4').style.background="url('Images/jeux/Memory.png')"; 
-    document.querySelector('#lien4').href ="https://qkryzzljekzele4jpr7w0g-on.drv.tw/Mémory/";
+    document.querySelector('#lien4').href ="https://qkryzzljekzele4jpr7w0g-on.drv.tw/Memory/";
 }
 
 
